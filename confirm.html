@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Web Development">
+    <meta name="keywords" content="HTML (Confirmation Page)">
+    <meta name="author" content="Jane Yu Yan Zhen">
+    <link href="style/style.css" rel="stylesheet" type="text/css">
+    <script src="javascript.js"></script>
+    <title>Confirmation Page</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="images/rootflowerpfp.jpg" width="85" height="85" alt="RootFlowerLogo">
+            </div>
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        </div>
+        
+        <input type="checkbox" id="menu-toggle">
+  
+        <div class="menu">
+            <div class="dropdown">
+                <a href="index.html" class="dropbtn">Home</a>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Activities &#9660; </button>
+                <div class="dropdown-content">
+                    <a href="workshop.html">Workshop</a>
+                    <a href="promotion.html">Promotion</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Products &#9660; </button> 
+                <div class="dropdown-content">
+                    <a href="product1.html">Bouquets</a>
+                    <a href="product2.html">CNY Decoration</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="enquiry.html" class="dropbtn">Enquiry</a>
+            </div>
+            <div class="dropdown">
+                <a href="register.html" class="dropbtn">Register</a>
+            </div>
+        </div>
+        <div class="nav-right"></div>
+    </nav>
+    
+    <main>
+        <div class="confirm-content">
+            <form id="confirmForm" action="mailto:104395810@students.swinburne.edu.my" method="post">
+                <fieldset>
+                    <legend>Confirmation Details</legend>
+                    
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <p><strong>First Name:</strong> <span id="confirm_fname"></span></p>
+                        <p><strong>Last Name:</strong> <span id="confirm_lname"></span></p>
+                        <p><strong>Email:</strong> <span id="confirm_email"></span></p>
+                        <p><strong>Phone:</strong> <span id="confirm_phone"></span></p>
+                    </fieldset>
+                    
+                    <fieldset id="addressSection" style="display: none;">
+                        <legend>Address Information</legend>
+                        <p><strong>Street Address:</strong> <span id="confirm_saddress"></span></p>
+                        <p><strong>City/Town:</strong> <span id="confirm_city"></span></p>
+                        <p><strong>State:</strong> <span id="confirm_state"></span></p>
+                        <p><strong>Postcode:</strong> <span id="confirm_postcode"></span></p>
+                    </fieldset>
+                    
+                    <fieldset id="enquirySection" style="display: none;">
+                        <legend>Enquiry Information</legend>
+                        <p><strong>Enquiry Type:</strong> <span id="confirm_enquiry"></span></p>
+                        <p><strong>Subject:</strong> <span id="confirm_subject"></span></p>
+                        <p><strong>Comments:</strong> <span id="confirm_comment"></span></p>
+                    </fieldset>
+                    
+                    <fieldset id="workshopSection" style="display: none;">
+                        <legend>Workshop Information</legend>
+                        <p><strong>Workshop Type:</strong> <span id="confirm_workshop"></span></p>
+                        <p><strong>Subject:</strong> <span id="confirm_wsubject"></span></p>
+                        <p><strong>Workshop Date:</strong> <span id="confirm_wdate"></span></p>
+                        <p><strong>Workshop Time:</strong> <span id="confirm_wtime"></span></p>
+                        <p><strong>Number of Participants:</strong> <span id="confirm_participants"></span></p>
+                        <p><strong>Comments:</strong> <span id="confirm_wcomment"></span></p>
+                    </fieldset>
+                    
+                    <input type="submit" value="Confirm">
+                    <input type="button" value="Cancel" id="cancelButton">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Root Flower</h3>
+                <p>Beautiful bouquets & creative floral designs for every occasion.</p>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="acknowledgement.html">Acknowledgement</a></li>
+                    <li><a href="enhancement.html">Enhancement 1</a></li>
+                    <li><a href="enhancement2.html">Enhancement 2</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><img src="images/address-icon.png" alt="Address" width="16" height="16"> Kuching, Sarawak</p>
+                <p><a href="https://theroot.wasap.my/">+6014-399 9709</a></p>
+                <p><a href="https://www.instagram.com/root.flowersss?igsh=MTVnOHI3ODE5cml6aA==">Instagram Profile</a></p>
+                <p><a href="mailto:rootflower@gmail.com">rootflower@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Root Flower. Created by <a href="profile.html">Jane Yu Yan Zhen</a>.</p>
+        </div>
+    </footer>
+    
+    <button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">&#9650;</button>
+</body>
+</html>
