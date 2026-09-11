@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="description" content="Web Development" >
+  <meta name="keywords" content="HTML (Workshop Register Form)" >
+  <meta name="author" content="Jane Yu Yan Zhen"  >
+  <link href="style/style.css" rel="stylesheet" type="text/css">
+  <script src="javascript.js"></script>
+  <title>Workshop Register Form</title>
+</head>
+<body>
+	<nav>
+		<div class="nav-left">
+			<div class="logo">
+				<img src="images/rootflowerpfp.jpg" width="85" height="85" alt="RootFlowerLogo">
+			</div>
+				<label for="menu-toggle" class="menu-icon">&#9776;</label>
+		</div>
+		
+		<input type="checkbox" id="menu-toggle">
+  
+		<div class="menu">
+			<div class="dropdown">
+				<a href="index.html" class="dropbtn">Home</a>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Activities &#9660; </button>
+				<div class="dropdown-content">
+					<a href="workshop.html">Workshop</a>
+					<a href="promotion.html">Promotion</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="dropbtn">Products &#9660; </button> 
+				<div class="dropdown-content">
+					<a href="product1.html">Bouquets</a>
+					<a href="product2.html">CNY Decoration</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<a href="enquiry.html" class="dropbtn">Enquiry</a>
+			</div>
+			<div class="dropdown">
+				<a href="register.html" class="dropbtn">Register</a>
+			</div>
+		</div>
+		<div class="nav-right"></div>
+	</nav>
+	<main>
+		<div class="enquiry-content">
+			<form id="registerForm" action="confirm.html" method="post">
+				<fieldset>
+					<fieldset>
+						<legend>Name and Contact</legend>
+						<p><label for="fname">First Name: </label>
+							<input type="text" id="fname" name="fname" maxlength="25" size="25" 
+							placeholder="Alphabetical Characters ONLY">*
+							<span class="error-message" id="fname-error"></span>
+						</p>
+						<p><label for="lname">Last Name: </label>
+							<input type="text" id="lname" name="lname" maxlength="25" size="25" 
+							placeholder="Alphabetical Characters ONLY">*
+							<span class="error-message" id="lname-error"></span>
+						</p>
+						<p><label for="email">Email address: </label>
+							<input type="text" id="email" name="emailContact" maxlength="25" size="25" 
+							placeholder="name@domain.com">*
+							<span class="error-message" id="email-error"></span>
+						</p>
+						<p>
+							<label for="phone">Phone Number:</label>
+							<input type="text" id="phone" name="phone" maxlength="10" 
+								placeholder="e.g. 0123456789">*
+							<span class="error-message" id="phone-error"></span>
+						</p>
+					</fieldset><br>
+					<fieldset>
+						<legend>Workshop Details</legend>
+						<p>
+							<label for="register">Type of Workshop: </label>
+							<select name="register" id="register">
+								<option value="" disabled selected>Please select a workshop type</option>
+							</select>*
+							<span class="error-message" id="register-error"></span>
+						</p>
+						<p>
+							<label for="subject">Subject: </label>
+							<input type="text" id="subject" name="subject" maxlength="100" size="40" 
+								placeholder="e.g. RE: Enquiry on Florest to Be Workshop">*
+							<span class="error-message" id="subject-error"></span>
+						</p>
+						<p>
+							<label for="wdate">Workshop Date:</label>
+							<input type="date" id="wdate" name="WorkshopDate">*<br><br>
+							<span class="error-message" id="wdate-error"></span>
+							<label for="wtime">Time:</label>
+							<input type="time" id="wtime" name="WorkshopTime">*
+							<span class="error-message" id="wtime-error"></span>
+						</p>
+						<p>
+							<label for="no_ofparticipant">No. of Participants:</label>
+							<input type="text" id="no_ofparticipant" name="no_ofparticipant" maxlength="2"
+							placeholder="Number ONLY">*
+							<span class="error-message" id="no_ofparticipant-error"></span>
+						</p>
+						<p>
+							<label for="re_comment">Comments: *</label><br>
+							<textarea id="re_comment" name="re_comments" rows="5" cols="80"></textarea>
+							<span class="error-message" id="re_comment-error"></span>
+						</p>
+					</fieldset><br>
+					<input type="submit" name="Submit"><input type="reset" name="Reset">
+				</fieldset>
+			</form>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-about">
+				<h3>Root Flower</h3>
+				<p>Beautiful bouquets & creative floral designs for every occasion.</p>
+			</div>
+	
+			<div class="footer-links">
+				<h4>Quick Links</h4>
+					<ul>
+						<li><a href="acknowledgement.html">Acknowledgement</a></li>
+						<li><a href="enhancement.html">Enhancement 1</a></li>
+						<li><a href="enhancement2.html">Enhancement 2</a></li>
+					</ul>
+			</div>
+
+			<div class="footer-contact">
+						<h4>Contact Us</h4>
+						<p><img src="images/address-icon.png" alt="Address" width="16" height="16"> Kuching, Sarawak</p>
+						<p><a href="https://theroot.wasap.my/">+6014-399 9709</a></p>
+						<p><a href="https://www.instagram.com/root.flowersss?igsh=MTVnOHI3ODE5cml6aA==">Instagram Profile</a></p>
+						<p><a href="mailto:rootflower@gmail.com">rootflower@gmail.com</a></p>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<p>&copy; 2025 Root Flower. Created by <a href="profile.html">Jane Yu Yan Zhen</a>.</p>
+		</div>
+	</footer>
+	<button id="backToTop" class="back-to-top" aria-label="Back to top" title="Back to top">&#9650;</button>
+</body>
+</html>
